@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".update"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Update Student"
+        android:textColor="#EF7B73"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_gravity="center"
+      android:padding="10dp">
+
+       <EditText
+           android:id="@+id/update_studentID"
+           android:layout_width="350dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="60dp"
+           android:ems="10"
+           android:hint="Student ID"
+           android:gravity="center"
+           android:inputType="number"/>
+
+       <EditText
+           android:id="@+id/update_studentName"
+           android:layout_width="350dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:ems="10"
+           android:hint="Enter Name"
+           android:gravity="center"
+           android:inputType="textPersonName"/>
+
+       <EditText
+           android:id="@+id/update_studentAdd"
+           android:layout_width="350dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:ems="10"
+           android:gravity="center"
+           android:hint="Address"
+           android:inputType="textPersonName"/>
+
+   </LinearLayout>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="UPDATE"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:onClick="clickUpdate"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
